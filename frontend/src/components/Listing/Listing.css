@@ -1,0 +1,29 @@
+#make_flex{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+    margin-top: 2rem;
+    row-gap: 4rem;
+    font-family: "Poppins", sans-serif;
+}
+h1{
+    
+  font-family: "Poppins", sans-serif;
+}
+.center{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+@media screen and (max-width: 630px){
+  #make_flex{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  #carbox .cari{
+    width: 70%;
+  }
+}

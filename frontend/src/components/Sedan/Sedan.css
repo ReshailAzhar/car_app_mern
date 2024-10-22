@@ -1,0 +1,139 @@
+/* @font-face {
+    font-family: 'FSP DEMO - Caros Heavy';
+    src: url('C:\Users\Ahmad\AppData\Local\Microsoft\Windows\Fonts\Fontspring-DEMO-caros-extrabold.otf') 
+}
+@font-face {
+    font-family: 'FSP DEMO - Caros Light';
+    src: url('C:\Users\Ahmad\AppData\Local\Microsoft\Windows\Fonts\Fontspring-DEMO-carossoft-bold.otf') 
+} */
+#sedan-box{
+   background-color: #fefefe;
+    margin: 5rem 0;
+}
+h1, h2, h3{
+    font-family: 'FSP DEMO - Caros Light';
+    font-weight:600;
+}
+h4, h5, h6, p{
+    font-family: "Hoxton NorthTrial", sans-serif;
+}
+#sedan-box h1{
+    text-align: center;
+    width: 100%;
+}
+#sedan-box .links{
+    display: flex;
+    /* width: 100%; */
+    margin: 0 auto;
+    justify-content: space-evenly;
+    margin: 3rem;
+    margin-bottom: 0;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+}
+.active h5{
+    border-bottom: 2px solid black;
+}
+#sedan-box .image{
+   
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#sedan-box img{
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+  
+}
+#sedan-box .all_images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#sedan-box .all_images> div{
+    display: none;
+}
+#sedan-box .all_images .active{
+    display: block;
+}
+#sedan-box .all_images h4{
+    font-size: large;
+    text-align: center;
+}
+#sedan-box .all_images .buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+#sedan-box .all_images .l{
+    border-bottom: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+#sedan-box .all_images .r{
+    padding: 8px 16px;
+    background-color: #010101;
+    color: white;
+    border-radius: 30px;
+    height: 70%;
+}
+
+
+
+/* Sedan.css */
+
+/* Base styles for images */
+.image {
+    opacity: 0; /* Initially hide images */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
+  }
+  
+  /* Fade-in animation when image is in view */
+  .fade-in {
+    opacity: 1; /* Show images with fade-in effect */
+  }
+  
+  /* Define fade-in animation using keyframes */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Apply fade-in animation to elements */
+  .image.fade-in {
+    animation: fadeIn 0.5s ease-in-out forwards; /* Apply animation to elements with both .image and .fade-in classes */
+  }
+  
+  /* Base styles for buttons */
+  .buttons {
+    opacity: 0; /* Initially hide buttons */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
+  }
+  
+  /* Fade-in animation for buttons when image is in view */
+  .image.active .buttons {
+    opacity: 1; /* Show buttons with fade-in effect when image is active */
+  }
+
+  @media (max-width: 600px) {
+    #sedan-box .links{
+        margin: 2rem;
+        margin-bottom: 0;
+    }
+  }
+  
